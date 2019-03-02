@@ -104,7 +104,7 @@ type RequestContext struct {
 	// If used with Amazon API Gateway custom authorizer, it represents the
 	// specified key-value pair of the context map returned from the custom
 	// authorizer AWS Lambda function.
-	Authorizer map[string]string `json:"-"`
+	Authorizer map[string]interface{} `json:"-"`
 }
 
 // Event represents an Amazon API Gateway Proxy Event.
